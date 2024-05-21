@@ -6,7 +6,7 @@ import Button from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="min-h-[calc(100vh-116px)] grid  lg:grid-cols-2 w-11/12 lg:w-full  container mx-auto gap-6">
+    <section className="min-h-[calc(100vh-116px)] grid lg:grid-cols-2 w-11/12 lg:w-full  container mx-auto gap-6">
       <div className="flex flex-col gap-8 my-auto">
         <Image
           src={Logo}
