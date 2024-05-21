@@ -1,16 +1,11 @@
 export const navLinks = [
     {
-        label: "Home",
-        style: "default",
-        url: "#",
-    },
-    {
-        label: "About Crux",
+        label: "About",
         style: "default",
         url: "#about",
     },
     {
-        label: "Introduction",
+        label: "Gallery",
         style: "default",
         url: "#intro",
     },

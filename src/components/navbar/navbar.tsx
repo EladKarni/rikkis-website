@@ -38,7 +38,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li key={link.label}>
               <Link
-                className="relative text-center font-semibold text-md w-fit block"
+                className="relative text-center font-semibold text-lg w-fit my-auto block mb-0"
                 href={link.url}
               >
                 {link.label}

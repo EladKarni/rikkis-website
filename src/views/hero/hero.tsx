@@ -12,7 +12,9 @@ const Hero = () => {
           src={Logo}
           alt="text of three rivers face paiting with a brush of different colors"
         />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+        <p className="font-semibold text-2xl text-black/80">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        </p>
         <Button link="#contact">Contact</Button>
       </div>
       <div className="grid-col-subgrid my-auto relative hidden lg:block lg:col-start-2">
