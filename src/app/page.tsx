@@ -1,7 +1,8 @@
 import About from "@/views/about/about";
+import Contact from "@/views/contact/contact";
+import FAQ from "@/views/faq/faq";
 import Gallery from "@/views/gallery/gallery";
 import Hero from "@/views/hero/hero";
-import Pricing from "@/views/pricing/pricing";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <Hero />
       <About />
       <Gallery />
-      <Pricing />
+      <FAQ />
+      <Contact />
     </main>
   );
 }

@@ -9,7 +9,7 @@ import GalleryImage6 from "/public/images/gallery6.jpeg";
 const Gallery = () => {
   return (
     <section className="bg-base-100 container mx-auto">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:text-center lg:py-16">
+      <div className="py-8 mx-2 max-w-screen-xl sm:text-center lg:py-16">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
           Some of our happy customers
         </h2>

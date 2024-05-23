@@ -6,7 +6,7 @@ import Button from "../ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="w-full navbar p-0 bg-base-100 flex-row-reverse px-4 lg:flex-row lg:container lg:px-0  py-4 mx-auto">
+    <nav className="w-full navbar h-28 p-0 bg-base-100 flex-row-reverse px-4 lg:flex-row lg:container lg:px-0  py-4 mx-auto">
       <div className="flex-none lg:hidden">
         <label
           htmlFor="my-drawer-3"
