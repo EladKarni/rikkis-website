@@ -1,3 +1,4 @@
+import { navLinks } from "@/consts/navLinks";
 import Link from "next/link";
 
 const MobileNavigation = () => {
@@ -9,27 +10,16 @@ const MobileNavigation = () => {
         className="drawer-overlay"
       ></label>
       <ul className="menu p-4 w-80 min-h-full bg-base-200 gap-8 text-center flex flex-col justify-center">
-        <Link
-          className="font-semibold text-2xl drop-shadow-sm"
-          href="#location"
-        >
-          Map
-        </Link>
-        <Link className="font-semibold text-2xl drop-shadow-sm" href="#events">
-          Events
-        </Link>
-        <Link className="font-semibold text-2xl drop-shadow-sm" href="#story">
-          Our Story
-        </Link>
-        <Link className="font-semibold text-2xl drop-shadow-sm" href="#menu">
-          Menu
-        </Link>
-        <Link
-          className="font-semibold text-2xl drop-shadow-sm"
-          href="#contact-section"
-        >
-          Contact
-        </Link>
+        {navLinks.map((link) => (
+          <li key={link.label}>
+            <Link
+              className="relative text-center font-semibold text-lg w-fit my-auto block mb-0"
+              href={link.url}
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

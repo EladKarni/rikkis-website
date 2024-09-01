@@ -8,16 +8,25 @@ import GalleryImage6 from "/public/images/gallery6.jpeg";
 
 const Gallery = () => {
   return (
-    <section className="bg-base-100 container mx-auto">
-      <div className="py-8 mx-2 max-w-screen-xl sm:text-center lg:py-16">
+    <section
+      id="gallery"
+      className="bg-base-100 container mx-auto scroll-mt-[100px]"
+    >
+      <div className="py-8 max-w-screen-xl sm:text-center lg:py-16">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
           Some of our happy customers
         </h2>
-        <p className="font-light text-gray-500 sm:text-lg md:px-20 lg:px-38 xl:px-48">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-          explicabo nam iusto error aliquid facere vero libero, quibusdam dicta,
-          autem reiciendis fugit earum id illo voluptate. Voluptatem ut vel
-          culpa!
+        <p className="font-semilight text-gray-700 sm:text-lg md:px-20 lg:px-38 xl:px-48">
+          These are just a few of the designs offered at events. You&apos;ll
+          notice some of the designs are more intricate or more simple,
+          depending on how big the party is. We cater to your needs and how
+          wiggly the kid is!
+          <br />
+          <br />
+          <i className="text-gray-500">
+            Please note, all photos of childen are posted with their
+            grown-up&apos;s permission.
+          </i>
         </p>
         <div className="gap-4 mt-8 md:grid md:grid-cols-4 md:grid-rows-4 md:mt-12 w-full md:max-h-[800px]">
           <Image

@@ -6,15 +6,18 @@ import Button from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100vh-112px)] grid md:grid-cols-2 md:w-full container mx-auto gap-6">
+    <section
+      id="hero"
+      className="h-[calc(100vh-112px)] grid md:grid-cols-2 md:w-full container mx-auto gap-6"
+    >
       <div className="flex flex-col gap-8 my-auto mx-auto items-center">
         <Image
-          className="aspect-square max-w-96"
+          className="aspect-square w-full"
           src={Logo}
           alt="text of three rivers face paiting with a brush of different colors"
         />
-        <p className="font-semibold lg:text-2xl text-black/80">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        <p className="font-semibold lg:text-2xl text-black/80 text-center">
+          Painting smiles on kids and adults since 2011
         </p>
         <Button link="#contact">Contact</Button>
       </div>
