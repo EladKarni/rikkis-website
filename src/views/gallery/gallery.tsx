@@ -1,10 +1,10 @@
 import Image from "next/image";
-import GalleryImage1 from "/public/images/gallery1.jpg";
-import GalleryImage2 from "/public/images/gallery2.jpg";
-import GalleryImage3 from "/public/images/gallery3.jpeg";
-import GalleryImage4 from "/public/images/gallery4.jpeg";
-import GalleryImage5 from "/public/images/gallery5.jpeg";
-import GalleryImage6 from "/public/images/gallery6.jpeg";
+import GalleryImage1 from "../../../public/images/gallery1.jpg";
+import GalleryImage2 from "../../../public/images/gallery2.jpg";
+import GalleryImage3 from "../../../public/images/gallery3.jpeg";
+import GalleryImage4 from "../../../public/images/gallery4.jpeg";
+import GalleryImage5 from "../../../public/images/gallery5.jpeg";
+import GalleryImage6 from "../../../public/images/gallery6.jpeg";
 
 const Gallery = () => {
   return (

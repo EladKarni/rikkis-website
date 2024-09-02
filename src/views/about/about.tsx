@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Portrait from "/public/images/rikki-portrait.jpg";
+import Portrait from "../../../public/images/rikki-portrait.jpg";
 
 const About = () => {
   return (
