@@ -16,11 +16,11 @@ const About = () => {
         <div>
           <h1 className="text-5xl font-bold">About Rikki</h1>
           <p className="py-6 text-xl">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi. Provident cupiditate voluptatem et in. Quaerat fugiat ut
+            Test Test Provident cupiditate voluptatem et in. Quaerat fugiat ut
             assumenda excepturi exercitationem quasi. In deleniti eaque aut
-            repudiandae et a id nisi.
+            repudiandae et a id nisi. Provident cupiditate voluptatem et in.
+            Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
+            deleniti eaque aut repudiandae et a id nisi.
           </p>
         </div>
       </div>
