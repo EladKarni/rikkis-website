@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       className="hero min-h-fit bg-base-100 py-10 container mx-auto scroll-mt-[100px]"
     >
-      <div className="hero-content p-0 gap-8 flex-col lg:flex-row justify-between">
+      <div className="hero-content w-full p-0 gap-8 flex-col lg:flex-row justify-between">
         <Image
           src={Portrait}
           alt={"portrait of rikki, owner of three rivers face painting"}

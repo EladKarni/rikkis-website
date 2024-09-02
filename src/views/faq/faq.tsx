@@ -27,7 +27,7 @@ const FAQSection = ({ faqItems }: FAQPropTypes) => {
             other questions and start the booking process!
           </p>
         </div>
-        <fieldset className="card shrink-0 w-full lg:max-w-xl shadow-2xl bg-base-100">
+        <fieldset className="card shrink-0 w-full lg:max-w-xl">
           <div className="form-body py-4 flex flex-col gap-8">
             {faqItems.map((faq) => (
               <Accordion

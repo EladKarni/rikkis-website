@@ -7,7 +7,7 @@ import Hero from "@/views/hero/hero";
 
 export default function Home() {
   return (
-    <main className="snap-y mx-2">
+    <main className="snap-y px-2 mx-auto max-w-[1200px]">
       <Hero />
       <About />
       <Gallery />

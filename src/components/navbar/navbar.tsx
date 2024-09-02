@@ -14,11 +14,11 @@ const Navbar = () => {
   return (
     <header
       className={clsx(
-        "sticky top-0 left-0 w-full z-50 duration-200 min-w-[290px]",
+        "sticky top-0 left-0 w-full px-2 z-50 duration-200 min-w-[290px]",
         isMounted && y > 50 && "shadow-primary-900 shadow-md"
       )}
     >
-      <nav className="w-full navbar p-0 bg-base-100 flex-row-reverse px-4 lg:flex-row lg:container lg:px-0  py-4 mx-auto">
+      <nav className="w-full navbar p-0 bg-base-100 flex-row-reverse px-4 lg:flex-row lg:container lg:px-0 py-4 md:max-w-[1198px] mx-auto">
         <div className="flex-none lg:hidden">
           <label
             htmlFor="my-drawer-3"
