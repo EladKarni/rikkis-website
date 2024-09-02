@@ -1,9 +1,9 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../public/logo.png";
 import { navLinks } from "@/consts/navLinks";
-import Button from "../ui/button";
 import { useMounted } from "@/hooks/useMounted";
 import clsx from "clsx";
 import { useWindowScroll } from "react-use";
