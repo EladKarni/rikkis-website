@@ -34,8 +34,8 @@ export default async function Home() {
     <main className="snap-y px-2 mx-auto max-w-[1200px] pb-8">
       <Hero />
       <About />
-      <Gallery images={gallery_images as unknown as GalleryImageType[]} />
-      <FAQ faqItems={faqItems as faqType[]} />
+      <Gallery images={gallery_images} />
+      <FAQ faqItems={faqItems} />
       <Contact />
     </main>
   );
