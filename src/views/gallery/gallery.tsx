@@ -1,12 +1,19 @@
 import Image from "next/image";
-import GalleryImage1 from "../../../public/images/gallery1.jpg";
-import GalleryImage2 from "../../../public/images/gallery2.jpg";
-import GalleryImage3 from "../../../public/images/gallery3.jpeg";
-import GalleryImage4 from "../../../public/images/gallery4.jpeg";
-import GalleryImage5 from "../../../public/images/gallery5.jpeg";
-import GalleryImage6 from "../../../public/images/gallery6.jpeg";
 
-const Gallery = () => {
+export type GalleryImageType = {
+  id: string;
+  url: string;
+  title: string;
+  width: number;
+  height: number;
+};
+
+type GalleryProps = {
+  images: GalleryImageType[];
+};
+
+const Gallery = ({ images }: GalleryProps) => {
+  console.log(images);
   return (
     <section
       id="gallery"
@@ -31,34 +38,46 @@ const Gallery = () => {
         <div className="gap-4 mt-8 md:grid md:grid-cols-4 md:grid-rows-4 md:mt-12 w-full md:max-h-[800px]">
           <Image
             className="h-full object-cover hidden col-span-2 row-span-2 mb-4 sm:mb-0 md:block rounded-lg"
-            src={GalleryImage1}
-            alt="content gallery 1"
+            src={`https:${images[0].url}`}
+            width={images[0].width}
+            height={images[0].height}
+            alt={images[0].title}
           />
 
           <Image
             className="h-full object-cover hidden col-span-1 row-span-2 sm:block rounded-lg"
-            src={GalleryImage3}
-            alt="content gallery 3"
+            src={`https:${images[1].url}`}
+            width={images[1].width}
+            height={images[1].height}
+            alt={images[1].title}
           />
           <Image
             className="h-full object-cover hidden col-span-1 row-span-2 sm:block rounded-lg"
-            src={GalleryImage4}
-            alt="content gallery 4"
+            src={`https:${images[2].url}`}
+            width={images[2].width}
+            height={images[2].height}
+            alt={images[2].title}
           />
           <Image
             className="h-full object-cover col-span-2 row-span-2 rounded-lg"
-            src={GalleryImage5}
-            alt="content gallery 5"
+            src={`https:${images[3].url}`}
+            width={images[3].width}
+            height={images[3].height}
+            alt={images[3].title}
           />
           <Image
             className="h-full object-cover hidden col-span-1 row-span-1 md:block rounded-lg"
-            src={GalleryImage6}
-            alt="content gallery 6"
+            src={`https:${images[4].url}`}
+            width={images[4].width}
+            height={images[4].height}
+            alt={images[4].title}
           />
           <Image
             className="h-full object-cover hidden col-span-1 row-span-3 col-start-4 row-start-1 md:block rounded-lg"
-            src={GalleryImage2}
-            alt="content gallery 2"
+            src={`https:${images[5].url}`}
+            width={images[5].width}
+            height={images[5].height}
+            alt={images[5].title}
           />
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { faqType } from "@/types/faqType";
 import { FC } from "react";
 
@@ -13,13 +14,6 @@ const Accordion: FC<AccordionProps> = ({
   selectedID,
 }) => {
   return (
-    // <div key={key} className="collapse collapse-arrow bg-primary/25">
-    //   <input type="radio" name="faq" />
-    //   <div className="collapse-title text-xl font-medium">{question}</div>
-    //   <div className="collapse-content">
-    //     <p>{answer}</p>
-    //   </div>
-    // </div>
     <div key={id} className="collapse collapse-arrow bg-primary/25">
       <input
         id={id}
@@ -35,7 +29,7 @@ const Accordion: FC<AccordionProps> = ({
       </label>
       <article className="collapse-content">
         <div className="[&_a]:text-primary-500 [&_a]:font-bold min-h-40">
-          {answer}
+          {documentToReactComponents(answer)}
         </div>
       </article>
     </div>
