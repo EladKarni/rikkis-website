@@ -36,7 +36,7 @@ export default async function Home() {
       <About />
       <Gallery images={gallery_images} />
       <FAQ faqItems={faqItems} />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }
