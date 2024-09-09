@@ -13,7 +13,6 @@ type GalleryProps = {
 };
 
 const Gallery = ({ images }: GalleryProps) => {
-  console.log(images);
   return (
     <section
       id="gallery"
