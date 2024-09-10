@@ -34,7 +34,7 @@ const Gallery = ({ images }: GalleryProps) => {
             grown-up&apos;s permission.
           </i>
         </p>
-        <div className="gap-4 mt-8 md:grid md:grid-cols-4 md:grid-rows-4 md:mt-12 w-full md:max-h-[800px]">
+        <div className="flex gap-4 mt-8 md:grid md:grid-cols-4 md:grid-rows-4 md:mt-12 w-full md:max-h-[800px] overflow-x-scroll">
           <Image
             className="h-full object-cover hidden col-span-2 row-span-2 mb-4 sm:mb-0 md:block rounded-lg"
             src={`https:${images[0].url}`}
@@ -42,7 +42,6 @@ const Gallery = ({ images }: GalleryProps) => {
             height={images[0].height}
             alt={images[0].title}
           />
-
           <Image
             className="h-full object-cover hidden col-span-1 row-span-2 sm:block rounded-lg"
             src={`https:${images[1].url}`}
@@ -51,7 +50,7 @@ const Gallery = ({ images }: GalleryProps) => {
             alt={images[1].title}
           />
           <Image
-            className="h-full object-cover hidden col-span-1 row-span-2 sm:block rounded-lg"
+            className="object-cover max-w-[80vw] col-span-1 row-span-2 sm:block rounded-lg"
             src={`https:${images[2].url}`}
             width={images[2].width}
             height={images[2].height}
@@ -65,14 +64,14 @@ const Gallery = ({ images }: GalleryProps) => {
             alt={images[3].title}
           />
           <Image
-            className="h-full object-cover hidden col-span-1 row-span-1 md:block rounded-lg"
+            className="h-full object-cover col-span-1 row-span-1 md:block rounded-lg"
             src={`https:${images[4].url}`}
             width={images[4].width}
             height={images[4].height}
             alt={images[4].title}
           />
           <Image
-            className="h-full object-cover hidden col-span-1 row-span-3 col-start-4 row-start-1 md:block rounded-lg"
+            className="h-full object-cover col-span-1 row-span-3 col-start-4 row-start-1 md:block rounded-lg"
             src={`https:${images[5].url}`}
             width={images[5].width}
             height={images[5].height}
