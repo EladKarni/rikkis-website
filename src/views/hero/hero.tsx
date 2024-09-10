@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../../public/logo-full.png";
+import Logo from "../../../public/logo-full.svg";
 import HeroImage from "../../../public/images/hero.png";
 import HeroMask from "../../../public/images/mask.svg";
 import Button from "@/components/ui/button";
@@ -15,6 +15,7 @@ const Hero = () => {
           className="aspect-square w-full"
           src={Logo}
           alt="text of three rivers face paiting with a brush of different colors"
+          priority
         />
         <p className="font-semibold lg:text-2xl text-black/80 text-center">
           Painting smiles on kids and adults since 2011
