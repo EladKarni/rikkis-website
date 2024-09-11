@@ -124,7 +124,7 @@ const Contact = () => {
                     type="date"
                     name="date"
                     className="grow"
-                    placeholder="Date"
+                    placeholder="Event Date"
                   />
                 </label>
                 <label className="input input-bordered flex items-center gap-2 flex-1">

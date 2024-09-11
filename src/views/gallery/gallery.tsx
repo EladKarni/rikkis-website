@@ -20,7 +20,7 @@ const Gallery = ({ images }: GalleryProps) => {
     >
       <div className="py-8 max-w-screen-xl sm:text-center lg:py-16">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-          Some of our happy customers
+          Gallery
         </h2>
         <p className="font-semilight text-gray-700 sm:text-lg md:px-20 lg:px-38 xl:px-48">
           These are just a few of the designs offered at events. You&apos;ll
@@ -34,7 +34,7 @@ const Gallery = ({ images }: GalleryProps) => {
             grown-up&apos;s permission.
           </i>
         </p>
-        <div className="flex gap-4 mt-8 md:grid md:grid-cols-4 md:grid-rows-4 md:mt-12 w-full md:max-h-[800px] overflow-x-scroll">
+        <div className="flex gap-4 mt-8 md:grid md:grid-cols-4 md:grid-rows-4 md:mt-12 w-full md:max-h-[800px] overflow-x-scroll md:overflow-visible">
           <Image
             className="h-full object-cover hidden col-span-2 row-span-2 mb-4 sm:mb-0 md:block rounded-lg"
             src={`https:${images[0].url}`}
@@ -50,7 +50,7 @@ const Gallery = ({ images }: GalleryProps) => {
             alt={images[1].title}
           />
           <Image
-            className="object-cover max-w-[80vw] col-span-1 row-span-2 sm:block rounded-lg"
+            className="md:h-full max-w-[80vw] md:max-w-full object-cover obj col-span-1 row-span-2 sm:block rounded-lg"
             src={`https:${images[2].url}`}
             width={images[2].width}
             height={images[2].height}
