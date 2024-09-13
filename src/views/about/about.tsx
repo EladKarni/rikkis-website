@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="hero min-h-fit bg-base-100 py-10 container mx-auto scroll-mt-[100px]"
+      className="hero min-h-fit py-10 container mx-auto scroll-mt-[100px]"
     >
       <div className="hero-content w-full p-0 gap-8 flex-col lg:flex-row justify-between">
         <Image
