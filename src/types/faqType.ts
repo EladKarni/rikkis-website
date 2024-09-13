@@ -1,5 +1,8 @@
+import { Document } from '@contentful/rich-text-types';
+
 export type faqType = {
-    question: string;
-    answer: string;
     id: string;
+    question: string;
+    answer: Document;
+    order: number;
 };

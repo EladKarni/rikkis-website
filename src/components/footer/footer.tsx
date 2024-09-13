@@ -14,7 +14,7 @@ const Footer = () => {
         />
       </Link>
       <div className="p-2 text-center text-base-100 font-light">
-        <p>&copy; 2024 Face Painting by Rikki. All rights reserved.</p>
+        <p>&copy; 2024 Rikki World, LLC. All rights reserved.</p>
       </div>
     </footer>
   );

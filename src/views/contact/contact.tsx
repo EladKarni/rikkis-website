@@ -10,18 +10,18 @@ const Contact = () => {
         const myForm = event.target;
         const formData = new FormData(myForm);
 
-        fetch("__form.html", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            // @ts-ignore
-            body: new URLSearchParams(formData).toString(),
+        fetch("/__form.html", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          // @ts-ignore
+          body: new URLSearchParams(formData).toString(),
         })
-            .then(() => router.push("/success"))
-            .catch((error) => alert(error));
+          .then(() => router.push("/success"))
+          .catch((error) => alert(error));
     };
 
     return (
-      <section className="py-8" id="contact-section">
+      <section className="py-8" id="contact">
         <div className="container mx-auto">
           <div className="prose text-center mx-auto my-6">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
@@ -124,7 +124,7 @@ const Contact = () => {
                     type="date"
                     name="date"
                     className="grow"
-                    placeholder="Date"
+                    placeholder="Event Date"
                   />
                 </label>
                 <label className="input input-bordered flex items-center gap-2 flex-1">

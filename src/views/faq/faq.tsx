@@ -8,7 +8,7 @@ interface FAQPropTypes {
 }
 
 const FAQSection = ({ faqItems }: FAQPropTypes) => {
-  const [selectedFAQ, setSelectedFAQ] = useState(faqItems[0].id);
+  const [selectedFAQ, setSelectedFAQ] = useState("");
   const onOptionChange = (e: { target: { value: SetStateAction<string> } }) => {
     setSelectedFAQ(e.target.value);
   };
