@@ -10,7 +10,7 @@ const Contact = () => {
         const myForm = event.target;
         const formData = new FormData(myForm);
 
-        fetch("/__form.html", {
+        fetch("/__forms.html", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           // @ts-ignore
@@ -34,7 +34,6 @@ const Contact = () => {
               name="contact"
               method="post"
               netlify-honeypot="bot-field"
-              data-netlify-recaptcha="true"
               action={"/success"}
               data-netlify="true"
               id="contact-form"
@@ -158,7 +157,6 @@ const Contact = () => {
                 name="message"
                 placeholder="Message"
               ></textarea>
-              <div data-netlify-recaptcha="true"></div>
               <input
                 name="submit"
                 type="submit"
